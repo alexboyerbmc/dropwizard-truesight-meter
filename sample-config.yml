@@ -6,6 +6,13 @@ metrics:
         excludes:
           - "logback"
         includes:
-          - "KafkaObservationSink\\.metrics\\.received"
-        useRegexFilters: true
+          - "KafkaObservationSink.metrics.received"
+          - "jvm.memory.heap.usage"
+          - "HttpUserStore.auth.authorized"
         frequency: 1 second
+        prefix: sasquatch
+        extensions:
+          - Mean
+          - Count
+          - MeanRate
+          - 95th
