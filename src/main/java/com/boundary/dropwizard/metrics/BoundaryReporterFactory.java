@@ -11,6 +11,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.net.HostAndPort;
 import io.dropwizard.metrics.BaseReporterFactory;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
@@ -19,15 +20,19 @@ import java.util.Set;
 public class BoundaryReporterFactory extends BaseReporterFactory {
 
 
+    @NotNull
     @JsonProperty
     private Optional<String> prefix = Optional.empty();
 
+    @NotNull
     @JsonProperty
     private Optional<HostAndPort> meter = Optional.empty();
 
+    @NotNull
     @JsonProperty
     private Set<MetricExtension> extensions = MetricExtension.ALL;
 
+    @NotNull
     @JsonProperty
     private List<String> masks = ImmutableList.of();
 
