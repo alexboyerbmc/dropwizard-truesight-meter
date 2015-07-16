@@ -52,9 +52,6 @@ public class BoundaryReporterFactory extends BaseReporterFactory {
         prefix.ifPresent(builder::setPrefix);
         meter.ifPresent(builder::setMeter);
 
-
-
-
         return builder.build();
     }
 }
