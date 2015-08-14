@@ -4,7 +4,7 @@
 
     <groupId>com.boundary</groupId>
     <artifactId>dropwizard-boundary</artifactId>
-    <version>0.4</version>
+    <version>0.5-SNAPSHOT</version>
 
 
     <properties>
@@ -75,7 +75,7 @@
 
     <scm>
         <connection>scm:git:ssh://git@vcs.boundary.us-west-2/services/dropwizard-boundary.git</connection>
-        <tag>dropwizard-boundary-0.4</tag>
+        <tag>HEAD</tag>
     </scm>
 
 
