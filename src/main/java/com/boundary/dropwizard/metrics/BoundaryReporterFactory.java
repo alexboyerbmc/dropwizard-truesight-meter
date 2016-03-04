@@ -10,7 +10,9 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
 import com.google.common.collect.ImmutableList;
 import com.google.common.net.HostAndPort;
 import io.dropwizard.metrics.BaseReporterFactory;
+import org.hibernate.validator.valuehandling.UnwrapValidatedValue;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Optional;
@@ -22,10 +24,12 @@ public class BoundaryReporterFactory extends BaseReporterFactory {
 
     @NotNull
     @JsonProperty
+    @UnwrapValidatedValue(false)
     private Optional<String> prefix = Optional.empty();
 
     @NotNull
     @JsonProperty
+    @UnwrapValidatedValue(false)
     private Optional<HostAndPort> meter = Optional.empty();
 
     @NotNull
