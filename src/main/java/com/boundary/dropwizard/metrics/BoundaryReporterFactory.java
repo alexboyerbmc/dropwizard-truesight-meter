@@ -12,7 +12,6 @@ import com.google.common.net.HostAndPort;
 import io.dropwizard.metrics.BaseReporterFactory;
 import org.hibernate.validator.valuehandling.UnwrapValidatedValue;
 
-import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Optional;
@@ -20,7 +19,6 @@ import java.util.Set;
 
 @JsonTypeName("boundary")
 public class BoundaryReporterFactory extends BaseReporterFactory {
-
 
     @NotNull
     @JsonProperty
@@ -40,7 +38,6 @@ public class BoundaryReporterFactory extends BaseReporterFactory {
     @JsonProperty
     private List<String> masks = ImmutableList.of();
 
-
     @Override
     public ScheduledReporter build(MetricRegistry metricRegistry) {
 
@@ -52,7 +49,6 @@ public class BoundaryReporterFactory extends BaseReporterFactory {
                 .setExtensions(extensions)
                 .setMasks(masks);
 
-        // optional fields
         prefix.ifPresent(builder::setPrefix);
         meter.ifPresent(builder::setMeter);
 
