@@ -1,8 +1,8 @@
-package com.boundary.dropwizard.metrics;
+package com.bmc.truesight.saas.dropwizard.metrics;
 
 
-import com.boundary.metrics.BoundaryReporter;
-import com.boundary.metrics.MetricExtension;
+import com.bmc.truesight.saas.metrics.MetricExtension;
+import com.bmc.truesight.saas.metrics.TrueSightMeterReporter;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.ScheduledReporter;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -17,8 +17,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
-@JsonTypeName("boundary")
-public class BoundaryReporterFactory extends BaseReporterFactory {
+@JsonTypeName("truesight")
+public class TruesightMeterReporterFactory extends BaseReporterFactory {
 
     @NotNull
     @JsonProperty
@@ -41,7 +41,7 @@ public class BoundaryReporterFactory extends BaseReporterFactory {
     @Override
     public ScheduledReporter build(MetricRegistry metricRegistry) {
 
-        BoundaryReporter.Builder builder = BoundaryReporter.builder()
+        TrueSightMeterReporter.Builder builder = TrueSightMeterReporter.builder()
                 .setDurationUnit(getDurationUnit())
                 .setFilter(getFilter())
                 .setRateUnit(getRateUnit())

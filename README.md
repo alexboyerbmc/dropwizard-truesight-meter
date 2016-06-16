@@ -1,10 +1,10 @@
-# metrics-boundary
+# dropwizard-truesight-meter
 
-Report dropwizard metrics to TrueSight pulse.
+Report dropwizard metrics to a Truesight meter.
 
 # Prerequisites
 
-A TrueSight Pulse meter is expected to be running locally.
+A TrueSight meter is expected to be running locally.
 
 # Installation
 ## Maven
@@ -12,8 +12,8 @@ A TrueSight Pulse meter is expected to be running locally.
 ```xml
 
     <dependency>
-        <groupId>com.boundary</groupId>
-        <artifactId>dropwizard-boundary</artifactId>
+        <groupId>com.bmc.truesight.saas</groupId>
+        <artifactId>dropwizard-truesight-meter</artifactId>
         <version>0.8</version>
     </dependency>
 ```
@@ -24,7 +24,7 @@ A TrueSight Pulse meter is expected to be running locally.
 ```yml
 metrics:
   reporters:
-    - type: boundary
+    - type: truesight
       durationUnit: milliseconds
       rateUnit: seconds
       excludes:

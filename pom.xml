@@ -2,21 +2,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.boundary</groupId>
-    <artifactId>dropwizard-boundary</artifactId>
+    <groupId>com.bmc.truesight.saas</groupId>
+    <artifactId>dropwizard-truesight-meter</artifactId>
     <version>0.9-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <boundary.metrics.version>0.7</boundary.metrics.version>
+        <truesight.meter.metrics.version>0.8-SNAPSHOT</truesight.meter.metrics.version>
         <dropwizard.version>0.9.2</dropwizard.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.boundary</groupId>
-            <artifactId>metrics-boundary</artifactId>
-            <version>${boundary.metrics.version}</version>
+            <groupId>com.bmc.truesight.saas</groupId>
+            <artifactId>metrics-truesight-meter</artifactId>
+            <version>${truesight.meter.metrics.version}</version>
         </dependency>
         <dependency>
             <groupId>io.dropwizard</groupId>
@@ -124,7 +124,7 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:ssh://git@github.bmc.com/ts-saas/dropwizard-boundary.git</connection>
+        <connection>scm:git:ssh://git@github.bmc.com/ts-saas/dropwizard-truesight-meter.git</connection>
         <tag>HEAD</tag>
     </scm>
 
