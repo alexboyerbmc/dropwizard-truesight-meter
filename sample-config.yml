@@ -1,6 +1,6 @@
 metrics:
     reporters:
-      - type: boundary
+      - type: truesight
         durationUnit: milliseconds
         rateUnit: seconds
         excludes:

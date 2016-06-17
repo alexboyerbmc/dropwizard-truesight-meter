@@ -1,1 +1,1 @@
-com.boundary.dropwizard.metrics.BoundaryReporterFactory
+com.bmc.truesight.saas.dropwizard.metrics.TruesightMeterReporterFactory
