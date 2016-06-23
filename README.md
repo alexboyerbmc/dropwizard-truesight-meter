@@ -1,6 +1,6 @@
 # dropwizard-truesight-meter
 
-Report dropwizard metrics to a Truesight meter.
+Report dropwizard metrics to a TrueSight meter.
 
 # Prerequisites
 
