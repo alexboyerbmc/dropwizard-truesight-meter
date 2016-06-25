@@ -14,7 +14,7 @@ A TrueSight meter is expected to be running locally.
     <dependency>
         <groupId>com.bmc.truesight.saas</groupId>
         <artifactId>dropwizard-truesight-meter</artifactId>
-        <version>0.8</version>
+        <version>0.9</version>
     </dependency>
 ```
 
