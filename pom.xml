@@ -4,7 +4,7 @@
 
     <groupId>com.bmc.truesight.saas</groupId>
     <artifactId>dropwizard-truesight-meter</artifactId>
-    <version>0.9-SNAPSHOT</version>
+    <version>0.9</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Report dropwizard metrics to a TrueSight meter.</description>
@@ -145,7 +145,7 @@
         <url>https://github.com/boundary/dropwizard-truesight-meter</url>
         <connection>scm:git:ssh://git@github.com/boundary/dropwizard-truesight-meter.git</connection>
         <developerConnection>scm:git:git@github.com:boundary/dropwizard-truesight-meter.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>dropwizard-truesight-meter-0.9</tag>
     </scm>
 
     <profiles>
