@@ -28,6 +28,11 @@ public class TruesightMeterReporterFactory extends BaseReporterFactory {
     @NotNull
     @JsonProperty
     @UnwrapValidatedValue(false)
+    private Optional<String> source = Optional.empty();
+
+    @NotNull
+    @JsonProperty
+    @UnwrapValidatedValue(false)
     private Optional<HostAndPort> meter = Optional.empty();
 
     @NotNull
@@ -51,6 +56,7 @@ public class TruesightMeterReporterFactory extends BaseReporterFactory {
 
         prefix.ifPresent(builder::setPrefix);
         meter.ifPresent(builder::setMeter);
+        source.ifPresent(builder::setSource);
 
         return builder.build();
     }
