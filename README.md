@@ -35,6 +35,7 @@ metrics:
       useRegexFilters: true
       frequency: 1 second
       prefix: my_app_name
+      source: my_source_name
       extensions:
         - Count
         - Median
